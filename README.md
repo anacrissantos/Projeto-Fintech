@@ -28,7 +28,7 @@ A aplicação está disponível publicamente via GitHub Pages no link abaixo:
 - [ ] Tornar o layout responsivo com media queries  
 - [ ] Integrar com backend simulado (futuramente)
 
-## 👩‍💻 Autora
+## 👩🏽‍💻 Autora
 
 Ana Cristina Santos  
 Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.
