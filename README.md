@@ -1,8 +1,8 @@
-# 💸 Projeto Fintech
+# 💸 Projeto EduFinAI
 
 Este repositório contém um projeto front-end desenvolvido como parte dos estudos sobre aplicações financeiras com foco em acessibilidade e usabilidade. O objetivo é simular a interface de uma plataforma de controle financeiro pessoal.
 
-## 📁 Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
 - `index.html`: Página principal com a estrutura da aplicação.
 - `style.css`: Estilos aplicados à interface da aplicação.
@@ -14,15 +14,14 @@ A aplicação está disponível publicamente via GitHub Pages no link abaixo:
 
 🔗 [https://anacrissantos.github.io/Projeto-Fintech/](https://anacrissantos.github.io/Projeto-Fintech/)
 
-
-## 🛠 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - HTML5  
 - CSS3  
 - Visual Studio Code (com extensão Live Server)  
 - Git e GitHub
 
-## 💡 Próximos passos
+## 🔮 Próximos passos
 
 - [ ] Adicionar interatividade com JavaScript  
 - [ ] Tornar o layout responsivo com media queries  
@@ -32,6 +31,7 @@ A aplicação está disponível publicamente via GitHub Pages no link abaixo:
 
 Ana Cristina Santos  
 Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.
+
 
 ---
 
