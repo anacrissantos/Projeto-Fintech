@@ -8,14 +8,12 @@ Este repositório contém um projeto front-end desenvolvido como parte dos estud
 - `style.css`: Estilos aplicados à interface da aplicação.
 - `.gitignore`: Arquivos ignorados pelo controle de versão (ex: `.DS_Store`).
 
-## 🚀 Como executar o projeto
+## 🚀 Acesse a aplicação online
 
-Você pode abrir o arquivo `index.html` diretamente no navegador para visualizar a aplicação.
+A aplicação está disponível publicamente via GitHub Pages no link abaixo:
 
-Ou, se preferir usar um servidor local com VSCode:
-1. Instale a extensão **Live Server**
-2. Clique com o botão direito no `index.html`
-3. Selecione **"Open with Live Server"**
+🔗 [https://anacrissantos.github.io/Projeto-Fintech/](https://anacrissantos.github.io/Projeto-Fintech/)
+
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -33,7 +31,7 @@ Ou, se preferir usar um servidor local com VSCode:
 ## 👩‍💻 Autora
 
 Ana Cristina Santos  
-Professora e pesquisadora em computação, tecnologia e inovação.
+Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.
 
 ---
 
