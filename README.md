@@ -62,21 +62,21 @@ EduFinAI/
 ├── index.html
 ├── index-add.html
 ├── style.css
-├── img/
-│   ├── add-category.svg
-│   ├── education.svg
-│   ├── house-expense.svg
-│   ├── investment.svg
-│   ├── status-bar.svg
-│   └── icons/
-│       ├── icon-back.svg
-│       ├── icon-bell.svg
-│       ├── icon-chart.svg
-│       ├── icon-cloud.svg
-│       ├── icon-home.svg
-│       ├── icon-menu.svg
-│       └── icon-user.svg
 ├── README.md
+└── img/
+├── add-category.svg
+├── education.svg
+├── house-expense.svg
+├── investment.svg
+├── status-bar.svg
+└── icons/
+├── icon-back.svg
+├── icon-bell.svg
+├── icon-chart.svg
+├── icon-cloud.svg
+├── icon-home.svg
+├── icon-menu.svg
+└── icon-user.svg
 
 
 
