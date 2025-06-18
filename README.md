@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💸 Projeto EduFinAI
 
 <p align="center">
@@ -36,8 +37,3 @@ A aplicação está disponível publicamente via GitHub Pages no link abaixo:
 
 Ana Cristina Santos  
 Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.
-
-
----
-
-> Projeto desenvolvido com fins educacionais para práticas de versionamento e publicação no GitHub.
