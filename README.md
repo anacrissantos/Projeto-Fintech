@@ -79,6 +79,7 @@ EduFinAI/
 ├── README.md
 
 
+
 ## ✨ Status do Projeto
 
 ✔️ Primeira tela implementada com responsividade  
