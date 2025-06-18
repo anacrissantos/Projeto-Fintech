@@ -1,5 +1,10 @@
 # 💸 Projeto EduFinAI
 
+<p align="center">
+  <img src="img/banner-edufinai.png" alt="Interface do EduFinAI" width="600"/>
+</p>
+
+
 Este repositório contém um projeto front-end desenvolvido como parte dos estudos sobre aplicações financeiras com foco em acessibilidade e usabilidade. O objetivo é simular a interface de uma plataforma de controle financeiro pessoal.
 
 ## 🗂️ Estrutura do Projeto
