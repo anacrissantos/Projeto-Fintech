@@ -2,47 +2,69 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EduFin AI - Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduFinAI - Cadastro de Itens</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="top-bar">
-    <h1>EduFin AI</h1>
-    <div class="user-actions">
-      <button>Entrar</button>
-      <button>Cadastre-se</button>
-    </div>
+<body class="bg-gray-50 font-sans">
+  
+  <img src="img/status-bar.svg" alt="Status bar" class="w-full" />
+  <!-- Topbar -->
+  <header class="bg-orange-400 text-white flex items-center justify-between px-4 py-3">
+    <img src="img/icons/icon-menu.svg" alt="Menu" class="w-6 h-6" />
+    <h1 class="text-lg font-medium">Definição dos Gastos</h1>
+    <img src="img/icons/icon-bell.svg" alt="Notificações" class="w-6 h-6" />
   </header>
 
-  <main class="dashboard">
-    <section class="saldo-info">
-      <div class="card saldo">Saldo: <strong>R$ 200,00</strong></div>
-      <div class="card reservas">Reservas: <strong>R$ 50,00</strong></div>
-      <div class="card investimentos">Investimentos: <strong>R$ 150,00</strong></div>
-    </section>
+  <!-- Conteúdo principal -->
+  <main class="p-4 space-y-4 pb-24">
+    <!-- Botão voltar -->
+    <button class="text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center shadow">&#8592;</button>
 
-    <section class="meta">
-      <p>Minha meta: <strong>68%</strong></p>
-      <progress value="68" max="100"></progress>
-      <p>Parabéns, você está quase alcançando sua meta!</p>
-    </section>
+    <!-- Card: Adicionar -->
+    <div class="bg-white rounded-xl p-4 shadow flex items-center justify-between">
+      <div>
+        <h2 class="text-lg font-semibold">Adicionar</h2>
+        <p class="text-gray-500 text-sm">Adicione uma nova categoria</p>
+      </div>
+      <img src="img/add-category.svg" alt="Adicionar" class="w-20 h-auto" />
+    </div>
 
-    <section class="categorias">
-      <h2>Adicionar nova categoria</h2>
-      <div class="categoria">
-        <h3>Educação</h3>
-        <p>Dinheiro destinado para minha educação nesse mês</p>
+    <!-- Card: Despesas de Casa -->
+    <div class="bg-white rounded-xl p-4 shadow flex items-center justify-between">
+      <div>
+        <h2 class="text-lg font-semibold">Despesas de Casa</h2>
+        <p class="text-gray-500 text-sm">Dinheiro para as contas de casa desse mês.</p>
       </div>
-      <div class="categoria">
-        <h3>Investimento</h3>
-        <p>Dinheiro para investir durante esse mês</p>
+      <img src="img/house-expense.svg" alt="Despesas de casa" class="w-20 h-auto" />
+    </div>
+
+    <!-- Card: Educação -->
+    <div class="bg-white rounded-xl p-4 shadow flex items-center justify-between">
+      <div>
+        <h2 class="text-lg font-semibold">Educação</h2>
+        <p class="text-gray-500 text-sm">Dinheiro destinado para minha educação nesse mês</p>
       </div>
-      <div class="categoria">
-        <h3>Despesas de Casa</h3>
-        <p>Dinheiro para as contas de casa desse mês</p>
+      <img src="img/education.svg" alt="Educação" class="w-20 h-auto" />
+    </div>
+
+    <!-- Card: Investimento -->
+    <div class="bg-white rounded-xl p-4 shadow flex items-center justify-between">
+      <div>
+        <h2 class="text-lg font-semibold">Investimento</h2>
+        <p class="text-gray-500 text-sm">Dinheiro para investir durante esse mês</p>
       </div>
-    </section>
+      <img src="img/investiment.svg" alt="Investimento" class="w-20 h-auto" />
+    </div>
   </main>
+
+  <!-- Navbar fixa inferior -->
+  <footer class="fixed bottom-0 w-full bg-white border-t border-gray-200 flex justify-around py-3">
+    <img src="img/icons/icon-home.svg" alt="Início" class="w-6 h-6" />
+    <img src="img/icons/icon-chart.svg" alt="Desempenho" class="w-6 h-6" />
+    <img src="img/icons/icon-cloud.svg" alt="Nuvem" class="w-6 h-6" />
+    <img src="img/icons/icon-user.svg" alt="Perfil" class="w-6 h-6" />
+  </footer>
+
 </body>
 </html>
