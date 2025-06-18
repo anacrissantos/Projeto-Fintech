@@ -79,7 +79,6 @@ EduFinAI/
 └── icon-user.svg
 
 
-
 ## ✨ Status do Projeto
 
 ✔️ Primeira tela implementada com responsividade  
