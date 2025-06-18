@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Categoria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+
+    <!-- Status Bar -->
+    <img src="img/status-bar.svg" alt="Status bar" class="w-full" />
+
+    <!-- Topbar -->
+    <header class="bg-orange-400 text-white flex items-center justify-between px-4 py-3">
+      <img src="img/icons/icon-menu.svg" alt="Menu" class="w-6 h-6" />
+      <h1 class="text-lg font-medium">Definição dos Gastos</h1>
+      <img src="img/icons/icon-bell.svg" alt="Notificações" class="w-6 h-6" />
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="p-4 space-y-6">
+
+      <!-- Voltar + Título -->
+      <div class="flex items-center space-x-2">
+        <img src="img/icons/icon-back.svg" alt="Voltar" class="w-5 h-5" />
+        <h2 class="text-xl font-semibold">Adicionar</h2>
+      </div>
+
+      <!-- Imagem Central -->
+      <img src="img/add-category-tela2.svg" alt="Ilustração porquinho" class="w-full rounded-xl" />
+
+      <!-- Inputs -->
+      <div class="space-y-4">
+        <input 
+          type="text" 
+          placeholder="Nome da Categoria" 
+          class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-300"
+        />
+        <input 
+          type="text" 
+          placeholder="Descrição da Categoria" 
+          class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-300"
+        />
+      </div>
+
+      <!-- Botão -->
+      <button 
+        class="bg-orange-400 text-white font-semibold py-3 rounded-xl w-full hover:bg-orange-500 transition"
+        onclick="alert('Categoria salva com sucesso!')"
+      >
+        Salvar
+      </button>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="fixed bottom-0 left-0 w-full bg-white flex justify-around py-2 border-t">
+      <img src="img/icons/icon-home.svg" alt="Home" class="w-6 h-6" />
+      <img src="img/icons/icon-chart.svg" alt="Chart" class="w-6 h-6 opacity-50" />
+      <img src="img/icons/icon-cloud.svg" alt="Cloud" class="w-6 h-6 opacity-50" />
+      <img src="img/icons/icon-user.svg" alt="User" class="w-6 h-6 opacity-50" />
+    </footer>
+    
+  </body>
+</html>
