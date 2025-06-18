@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 💸 Projeto EduFinAI
 
 <p align="center">
