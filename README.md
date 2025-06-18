@@ -32,14 +32,27 @@ Aplicação front-end desenvolvida como parte de um desafio prático com foco em
 
 ## 👩🏽‍💻 Como Executar Localmente
 
-### Opção 1 – Acesso via navegador:
-Basta acessar o link do GitHub Pages acima.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/anacrissantos/Projeto-Fintech.git
+   cd Projeto-Fintech
+Abra no VS Code e clique com o botão direito em index.html ou index-add.html, depois selecione "Open with Live Server"
 
-### Opção 2 – Servidor local com VSCode:
+Alternativamente, abra o arquivo localmente no navegador:
 
-1. Instale a extensão **Live Server** no VSCode  
-2. Clique com o botão direito sobre o arquivo `index.html`  
-3. Selecione **"Open with Live Server"**
+perl
+Copiar
+Editar
+file:///CAMINHO/DO/ARQUIVO/index.html
+
+## 🌐 Acesse online
+
+O projeto está publicado via GitHub Pages:
+
+🔗 https://anacrissantos.github.io/Projeto-Fintech/
+
+Para ver a segunda tela (index-add.html), edite a URL no navegador para:
+https://anacrissantos.github.io/Projeto-Fintech/index-add.html
 
 ---
 
@@ -50,20 +63,27 @@ EduFinAI/
 ├── index-add.html
 ├── style.css
 ├── img/
-│ ├── status-bar.svg
-│ ├── house-expense.svg
-│ └── icons/
-│ ├── icon-home.svg
-│ ├── icon-user.svg
-│ ├── icon-chart.svg
-│ └── ...
-└── README.md
----
+│   ├── add-category.svg
+│   ├── education.svg
+│   ├── house-expense.svg
+│   ├── investment.svg
+│   ├── status-bar.svg
+│   └── icons/
+│       ├── icon-back.svg
+│       ├── icon-bell.svg
+│       ├── icon-chart.svg
+│       ├── icon-cloud.svg
+│       ├── icon-home.svg
+│       ├── icon-menu.svg
+│       └── icon-user.svg
+├── README.md
+
+
 ## ✨ Status do Projeto
 
 ✔️ Primeira tela implementada com responsividade  
 ✔️ Segunda tela (formulário de categoria) funcional  
-🔜 Próxima etapa: implementação da terceira tela e interatividade com JavaScript
+🔜 Próxima etapa: implementação das demais telas e interatividade com JavaScript
 
 ---
 
@@ -71,6 +91,6 @@ EduFinAI/
 
 **Ana Cristina dos Santos**  
 Professora e desenvolvedora em formação contínua 💡  
-GitHub: [@anacrissantsantos](https://github.com/anacrissantsantos)
+GitHub: @anacrissantos
 
 > Projeto desenvolvido com fins educacionais para práticas de versionamento e publicação no GitHub.
