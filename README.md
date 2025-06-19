@@ -1,5 +1,12 @@
 # 💸 Projeto EduFinAI
 
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
+![HTML](https://img.shields.io/badge/HTML5-marca-orange)
+![CSS](https://img.shields.io/badge/CSS3-estilos-blue)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-utilizado-0ea5e9)
+![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-success)
+![License](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
+
 <p align="center">
   <img src="img/banner-readme.png" alt="Interface do EduFinAI" width="720"/>
 </p>
