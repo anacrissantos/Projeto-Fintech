@@ -1,22 +1,22 @@
-
 # 💸 Projeto EduFinAI
 
 <p align="center">
-  <img src="img/banner-edufinai.png" alt="Interface do EduFinAI" width="600"/>
+  <img src="img/banner-edufinai.png" alt="Interface do EduFinAI" style="max-width: 700px; height: auto; max-height: 300px; border-radius: 8px;" />
 </p>
-
 
 Este repositório contém um projeto front-end desenvolvido como parte dos estudos sobre aplicações financeiras com foco em acessibilidade e usabilidade. O objetivo é simular a interface de uma plataforma de controle financeiro pessoal.
 
 ## 🗂️ Estrutura do Projeto
 
 - `index.html`: Página principal com a estrutura da aplicação.
+- `index-add.html`: Tela de adição de nova categoria.
 - `style.css`: Estilos aplicados à interface da aplicação.
-- `.gitignore`: Arquivos ignorados pelo controle de versão (ex: `.DS_Store`).
+- `img/`: Diretório com ilustrações em SVG.
+- `img/icons/`: Diretório com ícones do rodapé e cabeçalho.
 
 ## 🚀 Acesse a aplicação online
 
-A aplicação está disponível publicamente via GitHub Pages no link abaixo:
+A aplicação está disponível publicamente via GitHub Pages:
 
 🔗 [https://anacrissantos.github.io/Projeto-Fintech/](https://anacrissantos.github.io/Projeto-Fintech/)
 
@@ -24,16 +24,18 @@ A aplicação está disponível publicamente via GitHub Pages no link abaixo:
 
 - HTML5  
 - CSS3  
-- Visual Studio Code (com extensão Live Server)  
-- Git e GitHub
+- Tailwind CSS  
+- Git e GitHub  
+- Visual Studio Code
 
 ## 🔮 Próximos passos
 
 - [ ] Adicionar interatividade com JavaScript  
-- [ ] Tornar o layout responsivo com media queries  
-- [ ] Integrar com backend simulado (futuramente)
+- [ ] Tornar o layout ainda mais dinâmico e reutilizável  
+- [ ] Adicionar testes de acessibilidade
 
 ## 👩🏽‍💻 Autora
 
-Ana Cristina Santos  
-Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.
+**Ana Cristina dos Santos**  
+Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.  
+GitHub: [@anacrissantos](https://github.com/anacrissantos)
