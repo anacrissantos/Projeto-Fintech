@@ -1,11 +1,13 @@
 # 💸 Projeto EduFinAI
 
-![status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
-![html](https://img.shields.io/badge/HTML5-marca-E34F26)
-![css](https://img.shields.io/badge/CSS3-estilos-264de4)
-![tailwind](https://img.shields.io/badge/TailwindCSS-utilizado-06b6d4)
-![deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-brightgreen)
-![licença](https://img.shields.io/badge/licença-MIT-green)
+<p align="center">
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-orange"/>
+  <img src="https://img.shields.io/badge/HTML5-marca-E34F26"/>
+  <img src="https://img.shields.io/badge/CSS3-estilos-264de4"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-utilizado-06b6d4"/>
+  <img src="https://img.shields.io/badge/deploy-GitHub%20Pages-brightgreen"/>
+  <img src="https://img.shields.io/badge/licença-MIT-green"/>
+</p>
 
 <p align="center">
   <img src="img/banner-readme.png" alt="Interface do EduFinAI" width="700"/>
