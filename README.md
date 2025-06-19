@@ -1,25 +1,39 @@
 # 💸 Projeto EduFinAI
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
-![HTML](https://img.shields.io/badge/HTML5-marca-orange)
-![CSS](https://img.shields.io/badge/CSS3-estilos-blue)
-![Tailwind](https://img.shields.io/badge/TailwindCSS-utilizado-0ea5e9)
-![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-success)
-![License](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
+![status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
+![html](https://img.shields.io/badge/HTML5-marca-E34F26)
+![css](https://img.shields.io/badge/CSS3-estilos-264de4)
+![tailwind](https://img.shields.io/badge/TailwindCSS-utilizado-06b6d4)
+![deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-brightgreen)
+![licença](https://img.shields.io/badge/licença-MIT-green)
 
 <p align="center">
-  <img src="img/banner-readme.png" alt="Interface do EduFinAI" width="720"/>
+  <img src="img/banner-readme.png" alt="Interface do EduFinAI" width="700"/>
 </p>
 
 Este repositório contém um projeto front-end desenvolvido como parte dos estudos sobre aplicações financeiras com foco em acessibilidade e usabilidade. O objetivo é simular a interface de uma plataforma de controle financeiro pessoal.
 
-## 🗂️ Estrutura do Projeto
+---
 
-- `index.html`: Página principal com a estrutura da aplicação.
-- `index-add.html`: Tela de adição de nova categoria.
-- `style.css`: Estilos aplicados à interface da aplicação.
-- `img/`: Diretório com ilustrações em SVG.
-- `img/icons/`: Diretório com ícones do rodapé e cabeçalho.
+## 📑 Sumário
+
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🚀 Acesse a aplicação online](#-acesse-a-aplicação-online)
+- [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [👩🏽‍💻 Autora](#-autora)
+- [📄 Licença](#-licença)
+
+---
+
+## 📁 Estrutura do Projeto
+
+- `index.html`: Página principal com a estrutura da aplicação.  
+- `index-add.html`: Tela de adição de nova categoria.  
+- `style.css`: Estilos aplicados à interface da aplicação.  
+- `img/`: Diretório com ilustrações em SVG.  
+- `img/icons/`: Diretório com ícones do rodapé e cabeçalho.  
+
+---
 
 ## 🚀 Acesse a aplicação online
 
@@ -27,22 +41,28 @@ A aplicação está disponível publicamente via GitHub Pages:
 
 🔗 [https://anacrissantos.github.io/Projeto-Fintech/](https://anacrissantos.github.io/Projeto-Fintech/)
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5  
 - CSS3  
 - Tailwind CSS  
 - Git e GitHub  
-- Visual Studio Code
+- Visual Studio Code  
 
-## 🔮 Próximos passos
-
-- [ ] Adicionar interatividade com JavaScript  
-- [ ] Tornar o layout ainda mais dinâmico e reutilizável  
-- [ ] Adicionar testes de acessibilidade
+---
 
 ## 👩🏽‍💻 Autora
 
 **Ana Cristina dos Santos**  
-Professora, pesquisadora e aprendiz em computação, tecnologia e inovação.  
-GitHub: [@anacrissantos](https://github.com/anacrissantos)
+Professora e desenvolvedora em formação contínua 💡  
+GitHub: [@anacrissantos](https://github.com/anacrissantos)  
+
+> Projeto desenvolvido com fins educacionais para práticas de versionamento e publicação no GitHub.
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob os termos da licença **MIT**.
