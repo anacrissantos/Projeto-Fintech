@@ -63,6 +63,7 @@ edufinai-api/
 ---
 
 ## 👥 Equipe
+
 🙂 Amanda
 🙂 Alex Caje Felix
 🙂 Ana Cristina
