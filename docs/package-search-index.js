@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"br.com.edufinai.cli"},{"l":"br.com.edufinai.model"},{"l":"br.com.edufinai.service"}];updateSearchResults();

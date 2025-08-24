@@ -1,2 +1,17 @@
+# Build e IDE
+target/
+out/
+.idea/
+*.iml
+
+# macOS
 .DS_Store
 
+# Logs/temporários
+*.log
+
+# Javadoc gerado (opcional manter fora do repositório)
+
+
+# Arquivos de ambiente/segurança
+*.env
