@@ -53,3 +53,30 @@ service.registerTransaction(t1);
 
 String relatorio = service.generateMonthlyReport(user);
 System.out.println(relatorio);
+```
+---
+
+## 🚀 Próximos Passos
+
+- Criar endpoints para cadastro de usuários
+- Conectar aplicação ao banco Oracle
+- Desenvolver interface web inicial
+- Implementar módulo de IA para recomendações financeiras
+
+---
+
+##  👩‍💻 Autores
+
+Alex
+Amanda
+Ana Cristina
+Bruno
+Carolina
+
+---
+
+##  📜 Licença
+
+Este projeto está sob a licença MIT.
+Consulte o arquivo LICENSE para mais detalhes.
+
