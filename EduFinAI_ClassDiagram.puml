@@ -1,0 +1,158 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam defaultTextAlignment center
+skinparam packageStyle rectangle
+
+top to bottom direction
+
+together {
+  package "br.com.edufinai.model" {
+
+    abstract class Account {
+      - Long id
+      - String number
+      # double balance
+      + <i>deposit(double)</i>
+      + <i>withdraw(double)</i>
+      + double checkBalance()
+    }
+
+    class CheckingAccount {
+      - double limit
+      + deposit(double)
+      + withdraw(double)
+    }
+
+    class SavingsAccount {
+      - double interestRate
+      + deposit(double)
+      + withdraw(double)
+      + applyInterest()
+    }
+
+    class User {
+      - Long id
+      - String name
+      - String email
+      - String passwordHash
+      + authenticate(String)
+      - gerarHash(String)
+      + setPassword(String)
+    }
+
+    class Transaction {
+      - Long id
+      - Long userId
+      - Long accountId
+      - Long categoryId
+      - TransactionType type
+      - BigDecimal amount
+      - LocalDate date
+      - String description
+    }
+
+    enum TransactionType {
+      INCOME
+      EXPENSE
+      INVESTMENT
+    }
+
+    class Investment {
+      - Long id
+      - String name
+      - double initialValue
+      - double rate
+      + double simulateReturn(int)
+    }
+
+    class Category {
+      - Long id
+      - String name
+      - String icon
+    }
+
+    package "gamification" {
+      class Goal {
+        - Long id
+        - Long userId
+        - String title
+        - BigDecimal targetAmount
+        - LocalDate deadline
+        - boolean achieved
+        + boolean checkIfAchieved(BigDecimal)
+      }
+
+      class Challenge {
+        - Long id
+        - String title
+        - String description
+        - LocalDate startDate
+        - LocalDate endDate
+        - BigDecimal value
+        - boolean completed
+      }
+
+      class Reward {
+        - Long id
+        - Long userId
+        - String description
+        - BigDecimal value
+        - boolean redeemed
+        + boolean redeem()
+      }
+
+      class Notification {
+        - Long id
+        - Long userId
+        - String message
+        - LocalDateTime timestamp
+        - boolean read
+        + void markAsRead()
+      }
+
+      class GamificationEngine {
+        - List<Goal> goals
+        - List<Challenge> challenges
+        - List<Reward> rewards
+        - List<Notification> notifications
+        + void addGoal(Goal)
+        + void checkGoalsProgress(BigDecimal)
+        + void addChallenge(Challenge)
+        + void checkChallengesStatus()
+        + List<Reward> getRewards()
+        + List<Notification> getNotifications()
+        + void clearNotifications()
+        + void printStatus()
+      }
+    }
+  }
+
+  package "br.com.edufinai.service" {
+    class GerenciadorFinanceiroService {
+      - List<Transaction> transactions
+      + void registerTransaction(Transaction)
+      + String generateMonthlyReport(User)
+      + List<Transaction> getTransacoes()
+    }
+
+    class SimuladorFinanceiro {
+      + BigDecimal projetarSaldoFuturo(List<Transaction>, int)
+      + BigDecimal ajustarPorInflacao(BigDecimal, double, int)
+      + int estimarMesesParaObjetivo(BigDecimal, List<Transaction>)
+    }
+  }
+
+  package "br.com.edufinai.cli" {
+    class EduFinApp {
+      + <u>void main(String[])</u>
+      - <u>void simularTransacoes(GerenciadorFinanceiroService, User)</u>
+      - <u>void processarGamificacao(GerenciadorFinanceiroService)</u>
+      - <u>void simularContasBancarias()</u>
+    }
+  }
+}
+
+' Heranças
+Account <|-- SavingsAccount
+Account <|-- CheckingAccount
+@enduml

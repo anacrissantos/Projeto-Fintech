@@ -4,11 +4,22 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
- * Representa uma transação financeira associada a uma conta e a uma categoria.
- * Na Etapa 1, a associação é realizada por IDs (accountId e categoryId).
+ * Representa uma transação financeira do usuário no EduFinAI.
+ * Uma transação pode ser do tipo receita (INCOME), despesa (EXPENSE) ou investimento (INVESTMENT).
+ *
+ * Responsabilidades:
+ * - Identificar o usuário, conta e categoria associados.
+ * - Registrar valor, data e descrição.
+ * - Definir o tipo da transação por meio do {@link TransactionType}.
+ *
+ * Exemplos de uso:
+ * - Receita: salário mensal de R$ 3000,00.
+ * - Despesa: gasto em restaurante de R$ 250,00.
+ * - Investimento: aporte em fundo de ações.
  */
 public class Transaction {
     private Long id;
+    private Long userId;
     private Long accountId;
     private Long categoryId;
     private TransactionType type;
@@ -17,26 +28,22 @@ public class Transaction {
     private String description;
 
     /**
-     * Construtor padrão.
-     */
-    public Transaction() {
-    }
-
-    /**
-     * Construtor completo.
+     * Cria uma nova transação.
      *
      * @param id          identificador único da transação
+     * @param userId      id do usuário dono da transação
      * @param accountId   id da conta associada
      * @param categoryId  id da categoria associada
-     * @param type        tipo da transação (INCOME/EXPENSE)
-     * @param amount      valor positivo da transação
-     * @param date        data da transação
-     * @param description descrição detalhada
+     * @param type        tipo da transação (INCOME, EXPENSE ou INVESTMENT)
+     * @param amount      valor monetário da transação
+     * @param date        data em que ocorreu
+     * @param description descrição breve (ex.: "Salário", "Restaurante")
      */
-    public Transaction(Long id, Long accountId, Long categoryId,
-                       TransactionType type, BigDecimal amount,
-                       LocalDate date, String description) {
+    public Transaction(Long id, Long userId, Long accountId, Long categoryId,
+                       TransactionType type, BigDecimal amount, LocalDate date,
+                       String description) {
         this.id = id;
+        this.userId = userId;
         this.accountId = accountId;
         this.categoryId = categoryId;
         this.type = type;
@@ -45,91 +52,44 @@ public class Transaction {
         this.description = description;
     }
 
-    /**
-     * @return id da transação
-     */
     public Long getId() {
         return id;
     }
 
-    /**
-     * @param id define o id da transação
-     */
-    public void setId(Long id) {
-        this.id = id;
+    public Long getUserId() {
+        return userId;
     }
 
-    /**
-     * @return id da conta associada
-     */
     public Long getAccountId() {
         return accountId;
     }
 
-    /**
-     * @param accountId define a conta associada
-     */
-    public void setAccountId(Long accountId) {
-        this.accountId = accountId;
-    }
-
-    /**
-     * @return id da categoria associada
-     */
     public Long getCategoryId() {
         return categoryId;
     }
 
-    /**
-     * @param categoryId define a categoria associada
-     */
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    /**
-     * @return tipo da transação (INCOME/EXPENSE)
-     */
     public TransactionType getType() {
         return type;
     }
 
     /**
-     * @param type define o tipo da transação
-     */
-    public void setType(TransactionType type) {
-        this.type = type;
-    }
-
-    /**
-     * @return valor da transação
+     * Retorna o valor da transação.
+     * Importante usar {@link BigDecimal} para evitar imprecisão em cálculos financeiros.
+     *
+     * @return valor monetário da transação
      */
     public BigDecimal getAmount() {
         return amount;
     }
 
-    /**
-     * @param amount define o valor da transação (positivo)
-     */
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
-    }
-
-    /**
-     * @return data da transação
-     */
     public LocalDate getDate() {
         return date;
     }
 
     /**
-     * @param date define a data da transação
-     */
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    /**
+     * Retorna a descrição textual da transação.
+     * Pode ser usada em relatórios ou exibição em interfaces.
+     *
      * @return descrição da transação
      */
     public String getDescription() {
@@ -137,20 +97,22 @@ public class Transaction {
     }
 
     /**
-     * @param description define a descrição da transação
+     * Retorna uma representação textual da transação,
+     * incluindo tipo, valor e data.
+     *
+     * @return string formatada com os principais dados da transação
      */
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     @Override
     public String toString() {
-        return "Transaction{id=" + id +
+        return "Transaction{" +
+                "id=" + id +
+                ", userId=" + userId +
                 ", accountId=" + accountId +
                 ", categoryId=" + categoryId +
                 ", type=" + type +
-                ", amount=" + amount +
+                ", amount=R$ " + amount +
                 ", date=" + date +
-                ", description='" + description + "'}";
+                ", description='" + description + '\'' +
+                '}';
     }
 }

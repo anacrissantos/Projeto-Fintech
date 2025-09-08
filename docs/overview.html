@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>EduFinAI - Documentação</title>
+</head>
+<body>
+<h1>EduFinAI</h1>
+<p>
+    O <strong>EduFinAI</strong> é um sistema educacional para simulação e gestão de finanças pessoais,
+    utilizado em atividades práticas de ensino de programação, modelagem orientada a objetos e gamificação.
+</p>
+
+<h2>Objetivos</h2>
+<ul>
+    <li>Registrar transações financeiras (receitas, despesas, investimentos).</li>
+    <li>Gerar relatórios mensais com receitas, despesas e saldo consolidado.</li>
+    <li>Simular projeções financeiras considerando inflação e metas.</li>
+    <li>Aplicar gamificação com metas, desafios, recompensas e notificações.</li>
+    <li>Desenvolver boas práticas de desenvolvimento (camadas, JavaDoc, ..).</li>
+</ul>
+
+<h2>Pacotes principais</h2>
+<ul>
+    <li><code>br.com.edufinai.model</code>: Entidades principais (usuário, conta, transação, categorias).</li>
+    <li><code>br.com.edufinai.model.gamification</code>: Componentes de gamificação (metas, desafios, recompensas, motor).</li>
+    <li><code>br.com.edufinai.service</code>: Serviços para gerenciamento financeiro e simulação.</li>
+    <li><code>br.com.edufinai.cli</code>: Ponto de entrada para execução via linha de comando.</li>
+</ul>
+
+<h2>Exemplo de uso</h2>
+<pre>
+User user = new User();
+user.setName("Ana");
+user.setEmail("ana@email.com");
+user.setPassword("1234");
+
+GerenciadorFinanceiroService service = new GerenciadorFinanceiroService();
+Transaction t1 = new Transaction(...); // Receita ou despesa
+service.registerTransaction(t1);
+
+String relatorio = service.generateMonthlyReport(user);
+System.out.println(relatorio);
+    </pre>
+
+<h2>Autores</h2>
+<p>
+    Projeto Fintech, chamado EduFinAI, por <strong>Alex, Amanda,Ana Cristina, Carolina e Bruno</strong>, com foco em práticas educacionais e na aplicação de conceitos de computação em cenários de finanças pessoais.
+</p>
+</body>
+</html>

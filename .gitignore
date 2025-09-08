@@ -1,17 +1,14 @@
-# Build e IDE
-target/
-out/
+# IntelliJ / Java
 .idea/
 *.iml
-
-# macOS
+out/
+target/
+build/
+.classpath
+.project
+.settings/
 .DS_Store
-
-# Logs/temporários
 *.log
 
-# Javadoc gerado (opcional manter fora do repositório)
+# se quiser manter o JavaDoc no repo, NÃO ignore a pasta docs/
 
-
-# Arquivos de ambiente/segurança
-*.env

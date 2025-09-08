@@ -1,60 +1,92 @@
 package br.com.edufinai.model;
-
 /**
- * Representa uma conta financeira (ex.: Carteira, Banco).
- * Usada para agrupar transações e calcular saldos.
+ * Classe abstrata que representa uma conta bancária genérica no sistema EduFinAI.
+ * Define os atributos e comportamentos básicos que serão herdados pelas subclasses.
+ *
+ * Responsabilidades:
+ * - Identificar a conta por meio de id e número.
+ * - Controlar o saldo atual.
+ * - Definir os contratos para operações de depósito e saque.
+ *
+ * Subclasses conhecidas:
+ * - {@link CheckingAccount}
+ * - {@link SavingsAccount}
+ *
+ * @author Ana
+ * @version 1.0
+ * @since 2025-09-07
  */
-public class Account {
+public abstract class Account {
     private Long id;
-    private String name;
+    private String number;
+    protected double balance;
 
     /**
-     * Construtor padrão.
-     */
-    public Account() {
-    }
-
-    /**
-     * Construtor completo.
+     * Construtor da conta bancária.
      *
-     * @param id   identificador único da conta
-     * @param name nome da conta (ex.: Carteira, Banco)
+     * @param id identificador único da conta
+     * @param number número da conta (ex.: "001")
+     * @param balance saldo inicial da conta
      */
-    public Account(Long id, String name) {
+    public Account(Long id, String number, double balance) {
         this.id = id;
-        this.name = name;
+        this.number = number;
+        this.balance = balance;
     }
 
     /**
-     * @return id da conta
+     * Realiza um depósito na conta.
+     * Este método deve ser implementado pelas subclasses.
+     *
+     * @param amount valor a ser depositado
      */
+    public abstract void deposit(double amount);
+
+    /**
+     * Realiza um saque na conta.
+     * Este método deve ser implementado pelas subclasses.
+     *
+     * @param amount valor a ser sacado
+     * @return true se o saque for realizado com sucesso, false caso contrário
+     */
+    public abstract boolean withdraw(double amount);
+
     public Long getId() {
         return id;
     }
 
-    /**
-     * @param id define o id da conta
-     */
-    public void setId(Long id) {
-        this.id = id;
+    public String getNumber() {
+        return number;
     }
 
     /**
-     * @return nome da conta
+     * Retorna o saldo atual da conta.
+     * Diferente de {@link #checkBalance()}, este método é usado internamente
+     * para leitura direta do campo de saldo.
+     *
+     * @return saldo atual
      */
-    public String getName() {
-        return name;
+    public double getBalance() {
+        return balance;
     }
 
     /**
-     * @param name define o nome da conta
+     * Consulta o saldo da conta.
+     * Funciona como um alias de {@link #getBalance()}, mas pode ser usado
+     * em cenários de exibição ou relatórios para maior clareza.
+     *
+     * @return saldo atual
      */
-    public void setName(String name) {
-        this.name = name;
+    public double checkBalance() {
+        return balance;
     }
 
     @Override
     public String toString() {
-        return "Account{id=" + id + ", name='" + name + "'}";
+        return "Account{" +
+                "id=" + id +
+                ", number='" + number + '\'' +
+                ", balance=R$ " + balance +
+                '}';
     }
 }

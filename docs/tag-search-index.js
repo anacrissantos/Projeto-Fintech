@@ -1,1 +1,1 @@
-tagSearchIndex = [];updateSearchResults();
+tagSearchIndex = [{"l":"Autores","h":"Overview","d":"Section","u":"index.html#autores-heading"},{"l":"EduFinAI","h":"Overview","d":"Section","u":"index.html#edufinai-heading"},{"l":"Exemplo de uso","h":"Overview","d":"Section","u":"index.html#exemplo-de-uso-heading"},{"l":"Objetivos","h":"Overview","d":"Section","u":"index.html#objetivos-heading"},{"l":"Pacotes principais","h":"Overview","d":"Section","u":"index.html#pacotes-principais-heading"}];updateSearchResults();
